@@ -14,35 +14,34 @@
     <title>Minha Galeria</title>
 </head>
 <body>
-  <div class ="row">
-  
-   <header class="col-12">
+  <div class ="row"></div>
+    <header class="col-12">
       <div class="menu col-2">
-          <img src="assets/logo.png" class="image">
+          <img src="{{asset('img/logo.png')}}" alt="Logo" class="image" style="max-width:60%;height:auto;">
       </div>
       <div class="menu col-10">
-          <p>MINHA GALERIA</p>
+          <p style="font-size:3vw">MINHA GALERIA</p>
       </div>
-   </header>
+  </header>  
 
    <section>
-    <div class="Foto1 col-12">
-        <img src="assets/Fotohistoria.png">
-        <label class="textos">Título</label>
-        <p class="paragrafo">{{config('user.title1')}}</p>
-       <button>
-         <img class="editarimg" src="assets/Imgeditar.png">
-       </button>
-            
+    <div class="Foto2 col-12">
+        <img src="{{asset('img/Fotohistoria.png')}}" alt="Fotohistoria">
+        <label>Título</label>
+        <p class="texto">{{config('user.titulo1')}}</p>
+        <p class="paragrafo">{{config('user.descricao1')}}</p>
+        <a href="editar.blade.php"> <img src="{{asset('img/Imgeditar.png')}}" alt="Imgeditar"></a>       
     </div>
   </section>
   <br>
   <section>
-    <div class="Foto1 col-12">
-      <img src="assets/Fotohistoria.png">
-      <label>Título</label>
-      <p class="paragrafo">{{config('user.title2')}}</p>
-     <button>
-       <img class="editarimg" src="assets/Imgeditar.png">
-     </button>
+    <div class="Foto2 col-12">
+        <img src="{{asset('img/Fotohistoria.png')}}" alt="Fotohistoria">
+        <label>Título</label>
+        <p class="texto">{{config('user.titulo2')}}</p>
+        <p class="paragrafo">{{config('user.descricao2')}}</p>
+        <a href="editar.blade.php"><img src="{{asset('img/Imgeditar.png')}}" alt="Imgeditar"></a>      
+    </div>
   </section>
+ </body>
+</html>
