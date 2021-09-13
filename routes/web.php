@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\initial\HistoriaController;
 use App\Http\Controllers\initial\InitialController;
 use App\Http\Controllers\UsuarioController;
 use Illuminate\Support\Facades\Route;
@@ -18,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [InitialController::class , "index"]);
 
 Route::get("/U", [UsuarioController::class , "index"]);
+
+Route::get("/Historia", [HistoriaController::class ,"index"]);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

@@ -18,12 +18,13 @@
   <div class ="row">
    <header class="col-12">
       <div class="menu col-2">
-          <img src="{{asset('img/logo.png')}}" class="image" style="(max-width:60% height:auto)" alt="Logo">
+          <img src="{{asset('img/logo.png')}}" class="image" alt="Logo">
       </div>
       <div class="menu col-10">
           <p style="font-size:3vw">BEM VINDO</p>
       </div>
    </header>
+   <a href="/Historia">AAAAAAAAOOOOOOPPPAAAAAAAAAA</a>
 </head>
 </body>
 </html>
