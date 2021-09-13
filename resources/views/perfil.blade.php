@@ -15,15 +15,14 @@
 </head>
 <body>
     <div class ="row">
-
         <header class="col-12">
             <div class="menu col-2">
-                <img src="assets/logo.png" class="image">
+                <img src="{{asset('img/logo.png')}}" alt="Logo" class="image" style="max-width:60%;height:auto;">
             </div>
             <div class="menu col-10">
-                <p>PERFIL</p>
+                <p style="font-size:3vw">PERFIL</p>
             </div>
-         </header>
+        </header>  
 
     <div class=" textos col-10">
          <form>
