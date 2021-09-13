@@ -16,15 +16,14 @@
 <body>
     <header class="col-12">
         <div class="menu col-2">
-            <img src="assets/logo.png" class="image">
+            <img src="{{asset('img/logo.png')}}" alt="Logo" class="image" style="max-width:60%;height:auto;">
         </div>
         <div class="menu col-10">
-            <p>DETALHES</p>
+            <p style="font-size:3vw">DETALHES</p>
         </div>
     </header>  
     <section>
-        <!–– Perguntar pro Lázaro sobre como chamar uma imagem ––>
-        <img src="assets/imagemdeexemplo.png" height="250px" width="250px"> 
+        <img src="{{asset(img/'imagemdeexemplo.png')}}" alt="Exemplo" height="250px" width="250px"> 
         <h1>{{ config('user.titulo', 'user.nome_user')}}</p>
         <p>{{ config('user.descricao')}}</p>
     </section>
