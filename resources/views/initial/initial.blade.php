@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <
+    <title>Bem-vindo</title>
+    <link rel="stylesheet" href="../css/initial.css">
     <link href="https://fonts.googleapis.com/css2?family=Chango" rel="stylesheet">
     <style>
         body {
@@ -18,14 +18,12 @@
   <div class ="row">
    <header class="col-12">
       <div class="menu col-2">
-          <img src="assets/logo.png" class="image" style="max-width:60%;height:auto;">
+          <img src="{{asset('img/logo.png')}}" class="image" style="(max-width:60% height:auto)" alt="Logo">
       </div>
       <div class="menu col-10">
-          <p style="font-size:3vw">MINHA GALERIA</p>
+          <p style="font-size:3vw">BEM VINDO</p>
       </div>
    </header>
 </head>
-    <h1>{{$nome}}</h1>
-    <a href="/">Inicial</a>
 </body>
 </html>

@@ -83,4 +83,4 @@ class UsuarioController extends Controller
     {
         //
     }
-}
+} 
