@@ -30,7 +30,7 @@
                 <form action="/action_page.php">
                     <label for="titulo">Título:</label><br>
                     <input type="text" id="titulo" name="titulo" value="O Sol da Alma"><br>
-                    <img src="assets/camera.png" for="myfile" class="camerazinha">
+                    <img src="{{asset('img/camera.png')}}" alt="Camera" for="myfile" class="camerazinha">
                     <label for="myfile" class="label" style="font-size:1,5vw">Envie a foto</label>
                     <input type="file" src="assets/camera.png" id="myfile" name="myfile"><br><br>
                     <label for="descricao">Descrição: </label><br>
