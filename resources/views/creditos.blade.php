@@ -17,10 +17,10 @@
 <body>
     <header class="col-12">
         <div class="menu col-2">
-            <img src="assets/logo.png" class="image">
+            <img src="{{asset('img/logo.png')}}" alt="Logo" class="image" style="max-width:60%;height:auto;">
         </div>
         <div class="menu col-10">
-            <p>CRÉDITOS</p>
+            <p style="font-size:3vw">CRÉDITOS</p>
         </div>
     </header>  
     <section>
@@ -37,7 +37,7 @@
         <p>Nossas mães</p>
         <p>E os pais também</p>
         <p>(Pra não ter ciúme)</p>
-        <img src="assets/logo.png">
+        <img src="{{asset('img/logo.png')}}" alt="Logo">
     </section>
 </body>
 </html>
