@@ -18,10 +18,24 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [InitialController::class , "index"]);
 
-Route::get("/U", [UsuarioController::class , "index"]);
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
-Route::get("/Historia", [HistoriaController::class ,"index"]);
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+  Route::get('/dashboard', function () {
     return view('dashboard');
-})->name('dashboard');
+  })->name('dashboard');
+
+  Route::resource("historia", HistoriaController::class);
+  Route::resource("creditos", CreditosController::class);
+  Route::resource("usuario", UsuarioController::class);
+  Route::resource("cadastrofoto", CadastroFotoController::class);
+  Route::resource("galeria", GaleriaController::class);
+  Route::resource("detalhes", DetalhesController::class);
+  Route::resource("minhagaleria", MinhaGaleriaController::class);
+  Route::resource("perfil", PerfilController::class);
+  Route::resource("editar", EditarController::class);
+  Route::resource("config", ConfigController::class);
+});
+
+//Route::get("/U", [UsuarioController::class , "index"]);
+
+//Route::get("/Historia", [HistoriaController::class ,"index"]);
