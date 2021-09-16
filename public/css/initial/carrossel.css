@@ -1,0 +1,25 @@
+@keyframes slide{
+    50%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: rotateX(100%);
+    }
+}
+
+main section.carrossel {
+    overflow: hidden;
+    display: flex;
+}
+
+main section.carrossel ol {
+    display: flex;
+    list-style-type: none;
+    animation: slide 30s infinite;
+}
+
+main h1 {
+    color: #FEDF50;
+    margin: 0.7rem;
+    text-align: center;
+}
