@@ -29,11 +29,11 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
   Route::resource("usuario", UsuarioController::class);
   Route::resource("cadastrofoto", CadastroFotoController::class);
   Route::resource("galeria", GaleriaController::class);
-  Route::resource("detalhes", DetalhesController::class);
+  Route::resource("detalhes", DetalhessController::class);
   Route::resource("minhagaleria", MinhaGaleriaController::class);
   Route::resource("perfil", PerfilController::class);
   Route::resource("editar", EditarController::class);
-  Route::resource("config", ConfigController::class);
+  Route::resource("config", ConfigurcoesController::class);
 });
 
 //Route::get("/U", [UsuarioController::class , "index"]);

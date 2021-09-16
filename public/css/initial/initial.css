@@ -49,3 +49,14 @@ header {
     margin-right: 80px;
 }
 
+.bg-login{
+    background-color: #FF7F27;
+}
+.bg-banner{
+    background-color: linear-gradient(180deg, #FEDF50 0%, #FF7F27 50.62%, #80002B 100%);;
+}
+
+.bg-button{
+    color: #80002B;
+    background-color: #FEDF50;
+}

@@ -12,11 +12,15 @@ class InitialController extends Controller
             "imagens" => [
                     [
                         "nome" => "imagemdeexemplo",
-                        "url" => "img/carrossel/imagemdeexemplo.png"
+                        "url" => "img/carrossel/imagemdeexemplo.svg"
                     ],
                     [ 
                         "nome" => "por_sol",
                         "url" => "img/carrossel/por_sol.jpg"
+                    ],
+                    [
+                        "nome" => "imagemdeexemplo2",
+                        "url" => "img/carrossel/imagemdeexemplo.jpg"
                     ]
                 ]
             ];
