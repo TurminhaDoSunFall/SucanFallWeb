@@ -1,3 +1,9 @@
+@extends('./initial')
+
+@section('content')
+olá
+@endsection
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +35,7 @@
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
-                        <a href="{{ url('/Perfil') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Perfil</a>
+                        <a href="{{ url('/Usuario') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Perfil</a>
                     @else
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 
@@ -53,7 +59,7 @@
         </section>
         <h1>Os pôres dos sóis mais belos que podemos vivenciar</h1>
         <a class="historia" href="/Historia">Conheça a nossa história</a>
+        @yield('content')
    </main>
-</head>
 </body>
 </html>

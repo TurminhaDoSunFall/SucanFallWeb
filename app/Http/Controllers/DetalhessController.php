@@ -8,6 +8,6 @@ class DetalhessController extends Controller
 {
     public function index()
     {
-        echo "detalhassovjdkalvmf";
+        return view("detalhes");
     }
 }

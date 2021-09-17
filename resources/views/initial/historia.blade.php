@@ -1,3 +1,9 @@
+@extends('./historia')
+
+@section('content')
+olá
+@endsection
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,8 +26,23 @@
       <div class="menu col-2">
           <img src="assets/logo.png" class="image">
       </div>
-      <div class="menu col-10">
+      <div class="menu col-8">
           <p>HISTÓRIAS</p>
+      </div>
+      <div class="col-2">
+      @if (Route::has('login'))
+                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                    @auth
+                        <a href="{{ url('/Usuario') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Perfil</a>
+                    @else
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                        @endif
+                    @endauth
+                </div>
+            @endif
       </div>
    </header>
 
@@ -40,10 +61,8 @@
             sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           <img src="assets/Fotohistoria.png">
         </div>
-        
+        @yield('content')
     </section>
-
-
   </div>
 </body>
 </html>

@@ -8,6 +8,6 @@ class GaleriaController extends Controller
 {
     public function index()
     {
-        echo "Fotinhossakcckdklavdfskvdfsvmdfvmdfmvdfv São elas";
+        return view("galeria");
     }
 }

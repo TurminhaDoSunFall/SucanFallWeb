@@ -79,3 +79,6 @@ img{
     top: 586px;  
 }
 
+a:link {color:#80002B; text-decoration: none;}
+a:visited {color: #80002B;}
+a:hover {color: #FEDF50;}

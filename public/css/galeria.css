@@ -53,3 +53,7 @@ section{
 .parte{
     margin-top: 70px;
 }
+
+a:link {color:#80002B; text-decoration: none;}
+a:visited {color: #80002B;}
+a:hover {color: #FEDF50;}

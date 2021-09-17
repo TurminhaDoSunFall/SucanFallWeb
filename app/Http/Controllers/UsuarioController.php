@@ -14,8 +14,7 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-        $nome = array("nome" => "Sérgio");
-        return view('inicial' , $nome);
+        return view("perfil");
     }
 
     /**

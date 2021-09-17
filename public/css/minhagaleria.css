@@ -92,3 +92,7 @@ button{
 .texto{
     margin-left: 10px;
 }
+
+a:link {color:#80002B; text-decoration: none;}
+a:visited {color: #80002B;}
+a:hover {color: #FEDF50;}

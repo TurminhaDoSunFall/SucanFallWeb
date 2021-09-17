@@ -8,6 +8,6 @@ class CreditosController extends Controller
 {
     public function index()
     {
-        echo "creditossssssssssssssssssssss";
+        return view("creditos");
     }
 }

@@ -8,6 +8,6 @@ class ConfigurcoesController extends Controller
 {
     public function index()
     {
-        echo "ATIVAR JANDIRA PROGRAMAÇÃO - CIONFIGURAÇÃO ON";
+        return view("config");
     }
 }

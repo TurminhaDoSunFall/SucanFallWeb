@@ -1,3 +1,9 @@
+@extends('./editar')
+
+@section('content')
+olá
+@endsection
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,9 +25,24 @@
         <div class="menu col-2">
             <img src="{{asset('img/logo.png')}}" alt="Logo" class="image" style="max-width:60%;height:auto;">
         </div>
-        <div class="menu col-10">
+        <div class="menu col-8">
             <p style="font-size:3vw">EDITAR</p>
         </div>
+        <div class="col-2">
+      @if (Route::has('login'))
+                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                    @auth
+                        <a href="{{ url('/Usuario') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Perfil</a>
+                    @else
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                        @endif
+                    @endauth
+                </div>
+            @endif
+      </div>
     </header> 
     <section class="col-12">
         <div class="editar col-5">
@@ -33,3 +54,5 @@
         </div>
         <input type="submit" value="submit">
     </section>
+    @yield('content')
+            </body>

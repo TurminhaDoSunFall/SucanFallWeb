@@ -1,3 +1,9 @@
+@extends('./perfil')
+
+@section('content')
+olá
+@endsection
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,27 +25,44 @@
             <div class="menu col-2">
                 <img src="{{asset('img/logo.png')}}" alt="Logo" class="image" style="max-width:60%;height:auto;">
             </div>
-            <div class="menu col-10">
+            <div class="menu col-8">
                 <p style="font-size:3vw">PERFIL</p>
             </div>
-        </header>  
+            <div class="col-2">
+            @if (Route::has('login'))
+                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                    @auth
+                        <a href="{{ url('/Usuario') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Perfil</a>
+                    @else
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 
-    <div class=" textos col-10">
-         <form>
-            <label>Nome: </label>
-            <p class="paragrafo">{{config('user.nome_user')}}</p>
-            <br>
-            <label>Email: </label>
-            <p class="paragrafo">{{config('user.email')}}</p>
-            <br>
-            <label>Número de Uploads: </label>
-            <p class="paragrafo">{{config('user.uploads')}}</p>
-        </form>
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                        @endif
+                    @endauth
+                </div>
+            @endif
+      </div>
+    </div>
+        </header>  
+    <section class="col-12">
+        <div class=" textos col-10">
+            <form>
+                <label>Nome: </label>
+                <p class="paragrafo">{{config('user.nome_user')}}></p>
+                <br>
+                <label>Email: </label>
+                <p class="paragrafo">{{config('user.email')}}></p>
+                <br>
+                <label>Número de Uploads: </label>
+                <p class="paragrafo">{{config('user.uploads')}}></p>
+            </form>
         </div>
-    </div>
-    <div class="col-8">
-        <img class="logo" src="{{asset('img/nuvem.png')}}" alt="Logo" class="image">
-    </div>
+        <div class="col-8">
+            <img class="logo" src="{{asset('img/nuvem.png')}}" alt="Logo" class="image">
+        </div>
+        @yield('content')
+    </section>
      
 </body>
 </html>

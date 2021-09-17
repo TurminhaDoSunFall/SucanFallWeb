@@ -8,6 +8,6 @@ class EditarController extends Controller
 {
     public function index()
     {
-        echo "ceditadassossssssssssssooosooososos";
+        return view("editar");
     }
 }

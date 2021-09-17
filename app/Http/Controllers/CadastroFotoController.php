@@ -8,6 +8,6 @@ class CadastroFotoController extends Controller
 {
     public function index()
     {
-        echo "CADASTRINHO FODAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        return view("cadastrofoto");
     }
 }
