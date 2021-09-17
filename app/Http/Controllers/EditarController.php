@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class EditarController extends Controller
 {
-    //
+    public function index()
+    {
+        echo "ceditadassossssssssssssooosooososos";
+    }
 }

@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class GaleriaController extends Controller
 {
-    //
+    public function index()
+    {
+        echo "Fotinhossakcckdklavdfskvdfsvmdfvmdfmvdfv São elas";
+    }
 }

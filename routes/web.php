@@ -3,6 +3,14 @@
 use App\Http\Controllers\initial\HistoriaController;
 use App\Http\Controllers\initial\InitialController;
 use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\CreditosController;
+use App\Http\Controllers\CadastroFotoController;
+use App\Http\Controllers\GaleriaController;
+use App\Http\Controllers\DetalhessController;
+use App\Http\Controllers\MinhaGaleriaController;
+use App\Http\Controllers\EditarController;
+use App\Http\Controllers\ConfigurcoesController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,7 +39,6 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
   Route::resource("Galeria", GaleriaController::class);
   Route::resource("Detalhes", DetalhessController::class);
   Route::resource("Minhagaleria", MinhaGaleriaController::class);
-  Route::resource("Perfil", PerfilController::class);
   Route::resource("Editar", EditarController::class);
   Route::resource("Config", ConfigurcoesController::class);
 });
