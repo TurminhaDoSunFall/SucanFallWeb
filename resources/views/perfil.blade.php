@@ -38,7 +38,7 @@
         </div>
     </div>
     <div class="col-8">
-        <img class="logo" src="assets/nuvem.png" class="image">
+        <img class="logo" src="{{asset('img/nuvem.png')}}" alt="Logo" class="image">
     </div>
      
 </body>

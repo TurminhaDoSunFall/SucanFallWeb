@@ -24,7 +24,16 @@ body{
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
+    
 }
+
+a:link {color:#80002B; text-decoration: none;}
+a:visited {color: #80002B;}
+a:hover {color: #FEDF50;}
+
+a.historia:link {color: #FF7F27 ; text-decoration: underline;}
+a.historia:visited {color: #FF7F27;}
+a.historia:hover {color: #FEDF50;}
 
 header {
     width: auto; 

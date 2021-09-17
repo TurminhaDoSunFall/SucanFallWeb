@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [InitialController::class , "index"]);
+Route::get("/Historia", [HistoriaController::class , "index"]);
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
@@ -24,16 +25,15 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     return view('dashboard');
   })->name('dashboard');
 
-  Route::resource("historia", HistoriaController::class);
-  Route::resource("creditos", CreditosController::class);
-  Route::resource("usuario", UsuarioController::class);
-  Route::resource("cadastrofoto", CadastroFotoController::class);
-  Route::resource("galeria", GaleriaController::class);
-  Route::resource("detalhes", DetalhessController::class);
-  Route::resource("minhagaleria", MinhaGaleriaController::class);
-  Route::resource("perfil", PerfilController::class);
-  Route::resource("editar", EditarController::class);
-  Route::resource("config", ConfigurcoesController::class);
+  Route::resource("Creditos", CreditosController::class);
+  Route::resource("Usuario", UsuarioController::class);
+  Route::resource("Cadastrofoto", CadastroFotoController::class);
+  Route::resource("Galeria", GaleriaController::class);
+  Route::resource("Detalhes", DetalhessController::class);
+  Route::resource("Minhagaleria", MinhaGaleriaController::class);
+  Route::resource("Perfil", PerfilController::class);
+  Route::resource("Editar", EditarController::class);
+  Route::resource("Config", ConfigurcoesController::class);
 });
 
 //Route::get("/U", [UsuarioController::class , "index"]);
