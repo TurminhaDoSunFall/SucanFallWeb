@@ -11,13 +11,14 @@ olá
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="{{asset('css/dropmenu.css')}}">
     <link href="https://fonts.googleapis.com/css2?family=Chango" rel="stylesheet">
     <style>
         body {
           font-family: "Chango", sans-serif;
         }
         </style>
-    <link rel="stylesheet" href="css/cadastrofoto.css">
+    <link rel="stylesheet" href="{{asset('css/cadastrofoto.css')}}">
     <title>Editar</title>
 </head>
 <body>
@@ -25,9 +26,23 @@ olá
         <div class="menu col-2">
             <img src="{{asset('img/logo.png')}}" alt="Logo" class="image" style="max-width:60%;height:auto;">
         </div>
-        <div class="menu col-8">
+        <div class="menu col-7">
             <p style="font-size:3vw">EDITAR</p>
         </div>
+        <div class="menu col-1">
+        <div class="dropdown">
+            <button class="dropbtn">MENU</button>
+            <div class="dropdown-content">
+                <a href="/">INICIO</a>
+                <a href="/Detalhes">DETALHES</a>
+                <a href="/Galeria">GALERIA</a>
+                <a href="/Minhagaleria">MINHA GALERIA<a>
+                <a href="/Editar">EDITAR<a>
+                <a href="/Creditos">CREDITOS</a>
+                <A HREF="/Config">CONFIGURAÇÕES</a>
+            </div>
+        </div>
+      </div>
         <div class="col-2">
       @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">

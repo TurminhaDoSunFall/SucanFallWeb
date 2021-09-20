@@ -16,7 +16,9 @@ olá
           font-family: "Chango", sans-serif;
         }
         </style>
-    <link rel="stylesheet" href="css/config.css">
+    <link rel="stylesheet" href="{{asset('css/config.css')}}">
+    <link rel="stylesheet" href="{{asset('css/dropmenu.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Chango" rel="stylesheet">
     <title>Configurações</title>
 </head>
 <body>
@@ -24,9 +26,23 @@ olá
         <div class="menu col-2">
             <img src="{{asset('img/logo.png')}}" alt="Logo" class="image" style="max-width:60%;height:auto;">
         </div>
-        <div class="menu col-8">
+        <div class="menu col-7">
             <p style="font-size:3vw">CONFIGURAÇÕES</p>
         </div>
+        <div class="menu col-1">
+        <div class="dropdown">
+            <button class="dropbtn">MENU</button>
+            <div class="dropdown-content">
+                <a href="/">INICIO</a>
+                <a href="/Detalhes">DETALHES</a>
+                <a href="/Galeria">GALERIA</a>
+                <a href="/Minhagaleria">MINHA GALERIA<a>
+                <a href="/Editar">EDITAR<a>
+                <a href="/Creditos">CREDITOS</a>
+                <A HREF="/Config">CONFIGURAÇÕES</a>
+            </div>
+        </div>
+      </div>
         <div class="col-2">
       @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
