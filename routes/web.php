@@ -24,8 +24,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [InitialController::class , "index"]);
-Route::get("/Historia", [HistoriaController::class , "index"]);
+Route::resource('/', [InitialController::class , "index"]);
+Route::resource("/Historia", [HistoriaController::class , "index"]);
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 

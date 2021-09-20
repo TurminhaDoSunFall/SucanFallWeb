@@ -13,6 +13,7 @@ olá
     <title>Bem-vindo</title>
     <link rel="stylesheet" href="{{asset('css/initial/initial.css')}}"/>
     <link rel="stylesheet" href="{{asset('css/initial/carrossel.css')}}"/>
+    <link rel="stylesheet" href="{{asset('css/dropmenu.css')}}"/>
     <link href="https://fonts.googleapis.com/css2?family=Chango" rel="stylesheet">
     <style>
         body {
@@ -28,8 +29,22 @@ olá
       <div class="menu col-2">
           <img src="{{asset('img/logo.png')}}" class="image" alt="Logo">
       </div>
-      <div class="menu col-8">
+      <div class="menu col-7">
           <p style="font-size:3vw">BEM VINDO</p>
+      </div>
+      <div class="menu col-1">
+        <div class="dropdown">
+            <button class="dropbtn">MENU</button>
+            <div class="dropdown-content">
+                <a href="/Cadastrofoto">CADASTRAR FOTO</a>
+                <a href="/Detalhes">DETALHES</a>
+                <a href="/Galeria">GALERIA</a>
+                <a href="/Minhagaleria">MINHA GALERIA<a>
+                <a href="/Editar">EDITAR<a>
+                <a href="/Creditos">CREDITOS</a>
+                <A HREF="/Config">CONFIGURAÇÕES</a>
+            </div>
+        </div>
       </div>
       <div class="menu col-2">
             @if (Route::has('login'))
