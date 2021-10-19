@@ -1,9 +1,3 @@
-@extends('./initial')
-
-@section('content')
-olá
-@endsection
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,3 +72,4 @@ olá
    </main>
 </body>
 </html>
+
