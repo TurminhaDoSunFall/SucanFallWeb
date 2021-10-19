@@ -8,6 +8,6 @@ class EditarController extends Controller
 {
     public function index()
     {
-        return view("editar");
+        return view("galeries/editar");
     }
 }

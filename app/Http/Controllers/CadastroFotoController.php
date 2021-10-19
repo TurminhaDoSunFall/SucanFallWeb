@@ -8,6 +8,6 @@ class CadastroFotoController extends Controller
 {
     public function index()
     {
-        return view("cadastrofoto");
+        return view("galeries/cadastrofoto");
     }
 }
