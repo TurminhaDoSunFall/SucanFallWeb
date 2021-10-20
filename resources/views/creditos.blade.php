@@ -1,9 +1,3 @@
-@extends('./creditos')
-
-@section('content')
-olá
-@endsection
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,7 +67,6 @@ olá
         <p>E os pais também</p>
         <p>(Pra não ter ciúme)</p>
         <img src="{{asset('img/logo.png')}}" alt="Logo">
-        @yield('content')
     </section>
 </body>
 </html>

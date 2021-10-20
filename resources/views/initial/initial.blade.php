@@ -68,7 +68,6 @@
         </section>
         <h1>Os pôres dos sóis mais belos que podemos vivenciar</h1>
         <a class="historia" href="/Historia">Conheça a nossa história</a>
-        @yield('content')
    </main>
 </body>
 </html>

@@ -69,5 +69,4 @@ olá
         </div>
         <input type="submit" value="submit">
     </section>
-    @yield('content')
-            </body>
+</body>

@@ -1,9 +1,3 @@
-@extends('./minhagaleria')
-
-@section('content')
-olá
-@endsection
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,5 +76,4 @@ olá
      </button>
       </div>
   </section>
-  @yield('content')
 </body>

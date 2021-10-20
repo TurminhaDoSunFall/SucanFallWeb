@@ -1,9 +1,3 @@
-@extends('./perfil')
-
-@section('content')
-olá
-@endsection
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,8 +70,6 @@ olá
         <div class="col-8">
             <img class="logo" src="{{asset('img/nuvem.png')}}" alt="Logo" class="image">
         </div>
-        @yield('content')
     </section>
-     
 </body>
 </html>

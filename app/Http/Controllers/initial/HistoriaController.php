@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class HistoriaController extends Controller
 {
     public function index(){
-        echo "historinhas loucas";
+        return view("initial/historia");
     }
 
 }

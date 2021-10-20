@@ -1,9 +1,3 @@
-@extends('./cadastrofoto')
-
-@section('content')
-olá
-@endsection
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +5,7 @@ olá
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="{{asset('css/dropmenu.css')}}"/>
     <link href="https://fonts.googleapis.com/css2?family=Chango" rel="stylesheet">
     <style>
         body {
@@ -77,6 +72,5 @@ olá
             </div>
         </div>  
     </section>
-    @yield('content')
 </body>
 </html>

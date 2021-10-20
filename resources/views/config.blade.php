@@ -1,9 +1,3 @@
-@extends('./config')
-
-@section('content')
-olá
-@endsection
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,7 +66,6 @@ olá
                 <a href="index.html" style="font-size:2vw" >Log Out</a>
             </li>
         </div>
-        @yield('content')
     </nav>
 </body>
 </html>

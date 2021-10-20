@@ -1,9 +1,3 @@
-@extends('./detalhes')
-
-@section('content')
-olá
-@endsection
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,6 +57,5 @@ olá
         <h1>{{ config('user.titulo', 'user.nome_user')}}</p>
         <p>{{ config('user.descricao')}}</p>
     </section>
-    @yield('content')
 </body>
 </html>
