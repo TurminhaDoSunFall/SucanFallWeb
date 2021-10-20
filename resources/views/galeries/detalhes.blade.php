@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{assets('css/detalhes.css')}}">
+    <link rel="stylesheet" href="{{asset('css/detalhes.css')}}">
     <link rel="stylesheet" href="{{asset('css/dropmenu.css')}}">
     <link href="https://fonts.googleapis.com/css2?family=Chango" rel="stylesheet">
     <style>
@@ -53,7 +53,7 @@
       </div>
     </header>  
     <section>
-        <img src="{{asset(img/'imagemdeexemplo.png')}}" alt="Exemplo" height="250px" width="250px"> 
+        <img src="{{asset('img/imagemdeexemplo.png')}}" alt="Exemplo" height="250px" width="250px"> 
         <h1>{{ config('user.titulo', 'user.nome_user')}}</p>
         <p>{{ config('user.descricao')}}</p>
     </section>

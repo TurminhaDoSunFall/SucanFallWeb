@@ -56,12 +56,12 @@
         <div class="parte col-12">
             <img src="{{asset('img/imagemdeexemplo.png')}}" alt="Exemplo" height="auto" width="auto" max-width="300px" max-height="300px">
             <img src="{{asset('img/imagemdeexemplo.png')}}" alt="Exemplo" height="auto" width="auto" max-width="300px" max-height="300px">
-            <img src="{{asset('img/'imagemdeexemplo.png')}}" alt="Exemplo" height="auto" width="auto" max-width="300px" max-height="300px"> 
+            <img src="{{asset('img/imagemdeexemplo.png')}}" alt="Exemplo" height="auto" width="auto" max-width="300px" max-height="300px"> 
         </div>
         <div class="parte col-12">
-            <img src="{{asset('img/'imagemdeexemplo.png')}}" alt="Exemplo" height="auto" width="auto" max-width="300px" max-height="300px">
-            <img src="{{asset('img/'imagemdeexemplo.png')}}" alt="Exemplo" height="auto" width="auto" max-width="300px" max-height="300px">
-            <img src="{{asset('img/'imagemdeexemplo.png')}}" alt="Exemplo" height="auto" width="auto" max-width="300px" max-height="300px"> 
+            <img src="{{asset('img/imagemdeexemplo.png')}}" alt="Exemplo" height="auto" width="auto" max-width="300px" max-height="300px">
+            <img src="{{asset('img/imagemdeexemplo.png')}}" alt="Exemplo" height="auto" width="auto" max-width="300px" max-height="300px">
+            <img src="{{asset('img/imagemdeexemplo.png')}}" alt="Exemplo" height="auto" width="auto" max-width="300px" max-height="300px"> 
         </div>
     </section>
 </body>
