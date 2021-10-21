@@ -8,6 +8,6 @@ class MinhaGaleriaController extends Controller
 {
     public function index()
     {
-        return view("galerias/minhagaleria");
+        return view("galeries/minhagaleria");
     }
 }

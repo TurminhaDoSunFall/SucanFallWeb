@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/creditos.css')}}">
+    <link rel="stylesheet" href="{{asset('css/dropmenu.css')}}"/>
     <link href="https://fonts.googleapis.com/css2?family=Chango" rel="stylesheet">
     <style>
         body {
