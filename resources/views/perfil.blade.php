@@ -58,13 +58,11 @@
         <div class=" textos col-10">
             <form>
                 <label>Nome: </label>
-                <p class="paragrafo">{{config('user.nome_user')}}></p>
+                <p class="paragrafo">{{config('users.name')}}></p>
                 <br>
                 <label>Email: </label>
-                <p class="paragrafo">{{config('user.email')}}></p>
+                <p class="paragrafo">{{config('users.email')}}></p>
                 <br>
-                <label>Número de Uploads: </label>
-                <p class="paragrafo">{{config('user.uploads')}}></p>
             </form>
         </div>
         <div class="col-8">
