@@ -63,7 +63,7 @@
         <div class="botoes col-12">
             <li class="botao">
                 <a href="login.html" style="font-size:2vw">Deletar Perfil</a><br>
-                <a href="index.html" style="font-size:2vw" >Log Out</a>
+                <a href="{{ route('logout') }}" style="font-size:2vw" >Log Out</a>
             </li>
         </div>
     </nav>
